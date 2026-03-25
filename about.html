@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | AiSenseiMY - Our Story, Team &amp; Mission</title>
+  <meta name="description" content="Learn about AiSenseiMY — our mission to democratize AI, our expert team, and the values that drive our consulting, training, and creative AI solutions in Malaysia.">
+  <meta name="keywords" content="about AiSenseiMY, AI team Malaysia, AI mission, AI consulting company, AI training experts, artificial intelligence Malaysia">
+  <meta name="author" content="AiSenseiMY">
+  <link rel="canonical" href="https://aisenseimy.github.io/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us | AiSenseiMY - Our Story, Team &amp; Mission">
+  <meta property="og:description" content="Meet the team behind AiSenseiMY. Discover our mission, values, and commitment to making AI accessible for businesses across Malaysia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aisenseimy.github.io/about.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Schema: AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About AiSenseiMY",
+    "url": "https://aisenseimy.github.io/about.html",
+    "description": "Learn about AiSenseiMY — our mission, team, and values driving AI innovation in Malaysia.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AiSenseiMY",
+      "url": "https://aisenseimy.github.io",
+      "description": "AI Consulting, Training & Creative Media Solutions",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Kuala Lumpur, Malaysia"
+      }
+    }
+  }
+  </script>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* ---- Page Banner ---- */
+    .page-banner {
+      padding: 160px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(12, 90, 219, 0.15) 0%, transparent 100%);
+    }
+    .page-banner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 50% 0%, rgba(12, 90, 219, 0.2) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .page-banner h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+    .breadcrumb {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .breadcrumb a {
+      color: #0c5adb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .breadcrumb a:hover {
+      color: #3b82f6;
+    }
+    .breadcrumb span {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ---- Our Story ---- */
+    .story-section {
+      padding: 100px 0;
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .story-visual {
+      position: relative;
+    }
+    .story-graphic {
+      width: 100%;
+      aspect-ratio: 1;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #0c5adb 0%, #6a11cb 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .story-graphic::before {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      animation: drift 20s linear infinite;
+    }
+    @keyframes drift {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-30px, -30px); }
+    }
+    .story-graphic i {
+      font-size: 6rem;
+      color: rgba(255, 255, 255, 0.25);
+      z-index: 1;
+    }
+    .story-text h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .story-text p {
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.8;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    .story-text .mission-highlight {
+      background: linear-gradient(135deg, rgba(12, 90, 219, 0.15), rgba(106, 17, 203, 0.1));
+      border-left: 4px solid #0c5adb;
+      padding: 20px 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 24px 0;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* ---- Team Section ---- */
+    .team-section {
+      padding: 100px 0;
+      background: rgba(12, 90, 219, 0.03);
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+      margin-top: 50px;
+    }
+    .team-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .team-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(12, 90, 219, 0.3);
+      box-shadow: 0 20px 60px rgba(12, 90, 219, 0.1);
+    }
+    .team-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      position: relative;
+    }
+    .team-card:nth-child(1) .team-avatar {
+      background: linear-gradient(135deg, #0c5adb, #3b82f6);
+    }
+    .team-card:nth-child(2) .team-avatar {
+      background: linear-gradient(135deg, #6a11cb, #a855f7);
+    }
+    .team-card:nth-child(3) .team-avatar {
+      background: linear-gradient(135deg, #11998e, #38ef7d);
+    }
+    .team-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .team-card .team-role {
+      color: #0c5adb;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .team-card p {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .team-social {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .team-social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+    .team-social a:hover {
+      background: #0c5adb;
+      border-color: #0c5adb;
+      color: #fff;
+    }
+
+    /* ---- Values Section ---- */
+    .values-section {
+      padding: 100px 0;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .value-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 40px 24px;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .value-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #0c5adb, #6a11cb);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .value-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(12, 90, 219, 0.3);
+      box-shadow: 0 20px 60px rgba(12, 90, 219, 0.08);
+    }
+    .value-card:hover::before {
+      opacity: 1;
+    }
+    .value-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(12, 90, 219, 0.15), rgba(106, 17, 203, 0.1));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.6rem;
+      color: #0c5adb;
+      transition: transform 0.3s;
+    }
+    .value-card:hover .value-icon {
+      transform: scale(1.1);
+    }
+    .value-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    .value-card p {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 992px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .story-graphic {
+        max-width: 320px;
+      }
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+      .page-banner {
+        padding: 140px 0 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================
+       Navigation
+       ======================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-brain"></i></div>
+        <div class="logo-text">Ai<span>Sensei</span>MY</div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+
+      <div class="nav-toggle" id="navToggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       Page Banner
+       ======================================== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>About AiSenseiMY</h1>
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span>About</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Our Story Section
+       ======================================== -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual reveal">
+          <div class="story-graphic">
+            <i class="fas fa-brain"></i>
+          </div>
+        </div>
+
+        <div class="story-text reveal">
+          <div class="section-subtitle">Our Story</div>
+          <h2>From Passion for AI to a Mission for Impact</h2>
+          <p>
+            AiSenseiMY was born out of a shared belief that artificial intelligence should not be
+            confined to tech giants and research labs. Founded in Kuala Lumpur, we set out to bridge
+            the gap between cutting-edge AI technology and the businesses that need it most.
+          </p>
+          <p>
+            What started as a small team of AI enthusiasts running weekend workshops has grown into
+            a full-service AI consulting, training, and creative media company serving clients
+            across Malaysia and beyond.
+          </p>
+          <div class="mission-highlight">
+            Our mission is to democratize artificial intelligence — making it accessible, practical,
+            and transformative for businesses of all sizes. We believe that when people understand AI,
+            they can shape a better future.
+          </div>
+          <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Our Team Section
+       ======================================== -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">Meet the Team</div>
+        <h2 class="section-title">The People Behind AiSenseiMY</h2>
+        <p class="section-desc">
+          A passionate team of AI practitioners, educators, and creatives committed to
+          helping you succeed with artificial intelligence.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar">AH</div>
+          <h3>Adam Hakim</h3>
+          <div class="team-role">Founder &amp; AI Strategist</div>
+          <p>
+            With over a decade of experience in machine learning and data science,
+            Adam leads AiSenseiMY's vision to make AI accessible and impactful for every business.
+          </p>
+          <div class="team-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar">NR</div>
+          <h3>Nurul Razali</h3>
+          <div class="team-role">Head of Training &amp; Education</div>
+          <p>
+            A passionate AI educator, Nurul designs and delivers hands-on training programs
+            that transform teams from AI beginners into confident practitioners.
+          </p>
+          <div class="team-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar">DT</div>
+          <h3>Daniel Tan</h3>
+          <div class="team-role">Creative Director &amp; AI Artist</div>
+          <p>
+            Blending art and technology, Daniel leads our creative AI projects — from generative
+            art installations to AI-powered media content that pushes boundaries.
+          </p>
+          <div class="team-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Our Values Section
+       ======================================== -->
+  <section class="values-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">What Drives Us</div>
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="section-desc">
+          These principles guide everything we do — from the solutions we build to the
+          relationships we nurture with our clients and community.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Innovation</h3>
+          <p>
+            We stay at the forefront of AI research and technology, constantly exploring new
+            methods and tools to deliver cutting-edge solutions for our clients.
+          </p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Education</h3>
+          <p>
+            Knowledge is power. We are committed to demystifying AI through practical training,
+            workshops, and content that empowers people to learn and grow.
+          </p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon"><i class="fas fa-palette"></i></div>
+          <h3>Creativity</h3>
+          <p>
+            AI is not just about algorithms — it is about imagination. We blend technical
+            excellence with creative thinking to produce truly unique results.
+          </p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Impact</h3>
+          <p>
+            Every project, workshop, and podcast episode is designed to create measurable,
+            meaningful impact for the businesses and communities we serve.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CTA Section
+       ======================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2 class="cta-title">Let's Build the Future Together</h2>
+        <p class="cta-desc">
+          Whether you need AI consulting, team training, or a creative AI partner,
+          AiSenseiMY is here to help you unlock the full potential of artificial intelligence.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+          <a href="services.html" class="btn btn-outline">View Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Footer
+       ======================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo-text">Ai<span>Sensei</span>MY</div>
+          <p>
+            Your trusted AI partner for consulting, training, and creative solutions.
+            We make artificial intelligence accessible, practical, and impactful for
+            businesses of all sizes.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Consulting</a></li>
+            <li><a href="training.html">AI Training</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="media.html">Creative Media</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <strong>Email</strong>
+              hello@aisenseimy.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text">
+              <strong>Phone</strong>
+              +60 12-345 6789
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="text">
+              <strong>Location</strong>
+              Kuala Lumpur, Malaysia
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AiSenseiMY. All rights reserved.</p>
+        <p>Built with <i class="fas fa-heart" style="color: var(--primary);"></i> and AI</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================
+       JavaScript
+       ======================================== -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('open');
+    }
+
+    // Close menu on link click (mobile)
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('open');
+      });
+    });
+
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>

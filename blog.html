@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Insights &amp; News Blog | AiSenseiMY</title>
+  <meta name="description" content="Stay up to date with the latest AI trends, tutorials, ethics discussions, and industry insights from the AiSenseiMY blog.">
+  <meta name="keywords" content="AI blog, artificial intelligence news, machine learning tutorials, AI ethics, AI business insights, AiSenseiMY blog">
+  <meta name="author" content="AiSenseiMY">
+  <link rel="canonical" href="https://aisenseimy.github.io/blog.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Insights &amp; News Blog | AiSenseiMY">
+  <meta property="og:description" content="Stay up to date with the latest AI trends, tutorials, ethics discussions, and industry insights from AiSenseiMY.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aisenseimy.github.io/blog.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Schema: Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "AiSenseiMY Blog",
+    "url": "https://aisenseimy.github.io/blog.html",
+    "description": "AI insights, tutorials, news, and industry analysis from AiSenseiMY.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AiSenseiMY",
+      "url": "https://aisenseimy.github.io"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========================================
+       Navigation
+       ======================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-brain"></i></div>
+        <div class="logo-text">Ai<span>Sensei</span>MY</div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+
+      <div class="nav-toggle" id="navToggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       Page Banner
+       ======================================== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>AI Insights &amp; News Blog</h1>
+      <div class="breadcrumb">
+        <a href="/">Home</a> <span>/</span> <span>Blog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Blog Grid
+       ======================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">Latest Articles</div>
+        <h2 class="section-title">Explore Our AI Knowledge Hub</h2>
+        <p class="section-desc">
+          Deep dives into AI trends, practical tutorials, ethical discussions, and real-world use cases to keep you informed and inspired.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <div class="blog-card reveal">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #0c5adb 0%, #00c6ff 100%);">
+            <i class="fas fa-briefcase" style="color: rgba(255,255,255,0.3);"></i>
+            <div class="overlay"></div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Mar 20, 2026</span>
+              <span><i class="far fa-folder"></i> AI Business</span>
+            </div>
+            <h3>How AI Is Reshaping Small and Medium Businesses</h3>
+            <p>Discover how SMEs are leveraging affordable AI tools to automate operations, improve customer experience, and compete with larger enterprises.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card reveal">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
+            <i class="fas fa-code" style="color: rgba(255,255,255,0.3);"></i>
+            <div class="overlay"></div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Mar 14, 2026</span>
+              <span><i class="far fa-folder"></i> ML Tutorial</span>
+            </div>
+            <h3>Building Your First Machine Learning Model: A Step-by-Step Guide</h3>
+            <p>A beginner-friendly walkthrough on training a classification model using Python, scikit-learn, and real-world data from scratch.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card reveal">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);">
+            <i class="fas fa-balance-scale" style="color: rgba(255,255,255,0.3);"></i>
+            <div class="overlay"></div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Mar 8, 2026</span>
+              <span><i class="far fa-folder"></i> AI Ethics</span>
+            </div>
+            <h3>Navigating AI Ethics: Bias, Transparency, and Accountability</h3>
+            <p>An in-depth look at the ethical challenges facing AI development and practical frameworks for building responsible, fair AI systems.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div class="blog-card reveal">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+            <i class="fas fa-industry" style="color: rgba(255,255,255,0.3);"></i>
+            <div class="overlay"></div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Feb 28, 2026</span>
+              <span><i class="far fa-folder"></i> Use Cases</span>
+            </div>
+            <h3>AI in Healthcare: Real-World Applications Saving Lives</h3>
+            <p>From diagnostic imaging to drug discovery, explore how hospitals and research labs are using AI to transform patient care and outcomes.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Card 5 -->
+        <div class="blog-card reveal">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);">
+            <i class="fas fa-bullhorn" style="color: rgba(255,255,255,0.3);"></i>
+            <div class="overlay"></div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Feb 20, 2026</span>
+              <span><i class="far fa-folder"></i> Company</span>
+            </div>
+            <h3>AiSenseiMY Launches New Corporate AI Training Program</h3>
+            <p>We are excited to announce our expanded training offerings designed for enterprise teams, including customized workshops and certification tracks.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Card 6 -->
+        <div class="blog-card reveal">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);">
+            <i class="fas fa-tools" style="color: rgba(255,255,255,0.3);"></i>
+            <div class="overlay"></div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Feb 12, 2026</span>
+              <span><i class="far fa-folder"></i> AI Tools</span>
+            </div>
+            <h3>Top 10 AI Tools Every Professional Should Know in 2026</h3>
+            <p>A curated list of the most powerful and accessible AI tools for productivity, creativity, coding, and data analysis available today.</p>
+            <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Newsletter Section
+       ======================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-box reveal" style="background: linear-gradient(135deg, rgba(12,90,219,0.15) 0%, rgba(4,20,36,0.8) 100%); border: 1px solid rgba(12,90,219,0.3); border-radius: 16px; padding: 50px; text-align: center;">
+        <h2 class="section-title" style="margin-bottom: 10px;">Subscribe to Our Newsletter</h2>
+        <p class="section-desc" style="margin-bottom: 30px;">Get the latest AI insights, tutorials, and company updates delivered straight to your inbox. No spam, just value.</p>
+        <div style="display: flex; gap: 12px; max-width: 520px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+          <input type="email" placeholder="Enter your email address" style="flex: 1; min-width: 250px; padding: 14px 20px; border-radius: 8px; border: 1px solid rgba(12,90,219,0.4); background: rgba(4,20,36,0.6); color: #fff; font-family: 'Roboto', sans-serif; font-size: 15px; outline: none;">
+          <a href="#" class="btn btn-primary" style="white-space: nowrap;">Subscribe <i class="fas fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CTA Section
+       ======================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2 class="cta-title">Ready to Transform Your Business with AI?</h2>
+        <p class="cta-desc">
+          Let's discuss how AiSenseiMY can help you unlock the full potential of
+          artificial intelligence for your organization.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Book a Free Consultation</a>
+          <a href="training.html" class="btn btn-outline">Explore Training Programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Footer
+       ======================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo-text">Ai<span>Sensei</span>MY</div>
+          <p>
+            Your trusted AI partner for consulting, training, and creative solutions.
+            We make artificial intelligence accessible, practical, and impactful for
+            businesses of all sizes.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Consulting</a></li>
+            <li><a href="training.html">AI Training</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="media.html">Creative Media</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <strong>Email</strong>
+              hello@aisenseimy.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text">
+              <strong>Phone</strong>
+              +60 12-345 6789
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="text">
+              <strong>Location</strong>
+              Kuala Lumpur, Malaysia
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AiSenseiMY. All rights reserved.</p>
+        <p>Built with <i class="fas fa-heart" style="color: var(--primary);"></i> and AI</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================
+       JavaScript
+       ======================================== -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('open');
+    }
+
+    // Close menu on link click (mobile)
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('open');
+      });
+    });
+
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>
