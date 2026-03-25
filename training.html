@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Training Programs | AiSenseiMY - Workshops, Courses &amp; Upskilling</title>
+  <meta name="description" content="AiSenseiMY offers hands-on AI training programs including workshops, corporate training, and bootcamps. Upskill your team in machine learning, data science, and practical AI applications.">
+  <meta name="keywords" content="AI training, AI workshops, machine learning course, AI bootcamp, corporate AI training, data science training Malaysia, AI upskilling, AI certification">
+  <meta name="author" content="AiSenseiMY">
+  <link rel="canonical" href="https://aisenseimy.github.io/training.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Training Programs | AiSenseiMY">
+  <meta property="og:description" content="Hands-on AI training programs — workshops, corporate training, and bootcamps to upskill your team in machine learning and practical AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aisenseimy.github.io/training.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Schema: Course -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "AI Training Programs by AiSenseiMY",
+    "itemListElement": [
+      {
+        "@type": "Course",
+        "position": 1,
+        "name": "AI Foundations Workshop",
+        "description": "A comprehensive introduction to artificial intelligence concepts, tools, and real-world applications for professionals at any level.",
+        "provider": {
+          "@type": "Organization",
+          "name": "AiSenseiMY",
+          "url": "https://aisenseimy.github.io"
+        }
+      },
+      {
+        "@type": "Course",
+        "position": 2,
+        "name": "Corporate AI Training",
+        "description": "Customized AI training programs designed for organizations looking to upskill their teams with practical, industry-specific AI knowledge.",
+        "provider": {
+          "@type": "Organization",
+          "name": "AiSenseiMY",
+          "url": "https://aisenseimy.github.io"
+        }
+      },
+      {
+        "@type": "Course",
+        "position": 3,
+        "name": "AI & ML Bootcamp",
+        "description": "Intensive hands-on bootcamp covering machine learning, deep learning, and AI application development with real-world projects.",
+        "provider": {
+          "@type": "Organization",
+          "name": "AiSenseiMY",
+          "url": "https://aisenseimy.github.io"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who are the AI training programs designed for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our training programs are designed for professionals at all levels — from business leaders and managers who want to understand AI strategy, to developers and engineers who want hands-on experience building AI solutions. No prior AI experience is required for our foundation-level programs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the training be customized for my organization?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Our corporate training programs are fully customizable. We work with your team to understand your industry, goals, and skill gaps, then design a tailored curriculum with relevant case studies and hands-on exercises specific to your business."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tools and technologies are covered in the training?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our programs cover a wide range of AI tools and frameworks including Python, TensorFlow, PyTorch, scikit-learn, OpenAI APIs, Hugging Face, and popular cloud AI platforms. The specific tools depend on the program level and your team's needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do participants receive a certificate after completing the training?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all participants receive a certificate of completion from AiSenseiMY upon finishing the program. Our certificates are recognized by industry partners and can be shared on professional profiles like LinkedIn."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* Page Banner */
+    .page-banner {
+      padding: 160px 0 80px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #041424 0%, #0a2a4a 50%, #041424 100%);
+    }
+
+    .page-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 30% 50%, rgba(12, 90, 219, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .page-banner .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .page-banner h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .page-banner h1 .highlight {
+      color: #0c5adb;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .breadcrumb a {
+      color: #0c5adb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      color: #3b82f6;
+    }
+
+    .breadcrumb .separator {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Training Program Cards */
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .training-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 40px 30px;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .training-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(12, 90, 219, 0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .training-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #0c5adb, #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+
+    .training-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .training-card > p {
+      font-family: 'Roboto', sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .training-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .training-card ul li {
+      font-family: 'Roboto', sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      padding: 8px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .training-card ul li i {
+      color: #0c5adb;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .training-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .training-meta span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .training-meta span i {
+      color: #0c5adb;
+    }
+
+    /* How It Works */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      position: relative;
+    }
+
+    .step-card {
+      text-align: center;
+      position: relative;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0c5adb, #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 auto 20px;
+    }
+
+    .step-card h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .step-card p {
+      font-family: 'Roboto', sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* FAQ Section */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+
+    .faq-item.active {
+      border-color: rgba(12, 90, 219, 0.4);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      gap: 16px;
+    }
+
+    .faq-question h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 0;
+      flex: 1;
+    }
+
+    .faq-question .faq-toggle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(12, 90, 219, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0c5adb;
+      flex-shrink: 0;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+      background: rgba(12, 90, 219, 0.3);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer p {
+      font-family: 'Roboto', sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      padding: 0 24px 20px;
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .training-grid {
+        grid-template-columns: 1fr;
+      }
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-banner {
+        padding: 130px 0 60px;
+      }
+      .page-banner h1 {
+        font-size: 2.2rem;
+      }
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================
+       Navigation
+       ======================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-brain"></i></div>
+        <div class="logo-text">Ai<span>Sensei</span>MY</div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="training.html" class="active">Training</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+
+      <div class="nav-toggle" id="navToggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       Page Banner
+       ======================================== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>AI <span class="highlight">Training</span> Programs</h1>
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="separator"><i class="fas fa-chevron-right"></i></span>
+        <span>Training</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Training Programs
+       ======================================== -->
+  <section class="section" id="training-programs">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">Our Programs</div>
+        <h2 class="section-title">AI Training Programs</h2>
+        <p class="section-desc">
+          Practical, hands-on AI training designed to upskill professionals at every level —
+          from AI foundations to advanced machine learning and deployment.
+        </p>
+      </div>
+
+      <div class="training-grid">
+        <!-- Card 1: AI Foundations Workshop -->
+        <div class="training-card reveal">
+          <div class="training-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>AI Foundations Workshop</h3>
+          <div class="training-meta">
+            <span><i class="fas fa-clock"></i> 2 Days</span>
+            <span><i class="fas fa-users"></i> All Levels</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <p>
+            A comprehensive introduction to artificial intelligence for professionals at any level.
+            Understand core AI concepts, explore real-world applications, and gain hands-on
+            experience with AI tools — no coding required.
+          </p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Introduction to AI, ML, and deep learning concepts</li>
+            <li><i class="fas fa-check-circle"></i> Hands-on exercises with no-code AI platforms</li>
+            <li><i class="fas fa-check-circle"></i> Real-world AI use cases across industries</li>
+            <li><i class="fas fa-check-circle"></i> AI ethics and responsible AI practices</li>
+            <li><i class="fas fa-check-circle"></i> Building your first AI-powered workflow</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Corporate AI Training -->
+        <div class="training-card reveal">
+          <div class="training-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Corporate AI Training</h3>
+          <div class="training-meta">
+            <span><i class="fas fa-clock"></i> 3-5 Days</span>
+            <span><i class="fas fa-users"></i> Teams</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <p>
+            Customized AI training programs designed for organizations. We tailor the curriculum
+            to your industry, goals, and team skill levels — delivering practical knowledge
+            your teams can apply immediately.
+          </p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Customized curriculum for your industry</li>
+            <li><i class="fas fa-check-circle"></i> Hands-on projects using your business data</li>
+            <li><i class="fas fa-check-circle"></i> AI strategy sessions for leadership teams</li>
+            <li><i class="fas fa-check-circle"></i> Post-training support and mentoring</li>
+            <li><i class="fas fa-check-circle"></i> Team assessments and progress tracking</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: AI & ML Bootcamp -->
+        <div class="training-card reveal">
+          <div class="training-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>AI &amp; ML Bootcamp</h3>
+          <div class="training-meta">
+            <span><i class="fas fa-clock"></i> 5 Days</span>
+            <span><i class="fas fa-users"></i> Intermediate</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <p>
+            An intensive bootcamp covering machine learning, deep learning, and AI application
+            development. Build real-world projects from data preparation to model deployment
+            using industry-standard tools.
+          </p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Python for data science and ML</li>
+            <li><i class="fas fa-check-circle"></i> Supervised and unsupervised learning</li>
+            <li><i class="fas fa-check-circle"></i> Deep learning with TensorFlow and PyTorch</li>
+            <li><i class="fas fa-check-circle"></i> NLP and computer vision projects</li>
+            <li><i class="fas fa-check-circle"></i> Model deployment and MLOps fundamentals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       How It Works
+       ======================================== -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">How It Works</div>
+        <h2 class="section-title">Your Learning Journey</h2>
+        <p class="section-desc">
+          From consultation to certification — here's how our training programs work.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">1</div>
+          <h4>Consultation</h4>
+          <p>We assess your team's current skills, goals, and industry context to design the right program.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">2</div>
+          <h4>Custom Curriculum</h4>
+          <p>We build a tailored training plan with relevant case studies, exercises, and hands-on projects.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">3</div>
+          <h4>Hands-On Training</h4>
+          <p>Interactive workshops led by experienced AI practitioners with real-world project work.</p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">4</div>
+          <h4>Certification &amp; Support</h4>
+          <p>Participants receive certificates and ongoing access to resources, mentoring, and community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FAQ Section
+       ======================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">Common Questions</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Find answers to the most common questions about our AI training programs.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>Who are the AI training programs designed for?</h4>
+            <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Our training programs are designed for professionals at all levels — from business leaders and managers who want to understand AI strategy, to developers and engineers who want hands-on experience building AI solutions. No prior AI experience is required for our foundation-level programs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>Can the training be customized for my organization?</h4>
+            <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. Our corporate training programs are fully customizable. We work with your team to understand your industry, goals, and skill gaps, then design a tailored curriculum with relevant case studies and hands-on exercises specific to your business.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>What tools and technologies are covered in the training?</h4>
+            <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Our programs cover a wide range of AI tools and frameworks including Python, TensorFlow, PyTorch, scikit-learn, OpenAI APIs, Hugging Face, and popular cloud AI platforms. The specific tools depend on the program level and your team's needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>Do participants receive a certificate after completing the training?</h4>
+            <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, all participants receive a certificate of completion from AiSenseiMY upon finishing the program. Our certificates are recognized by industry partners and can be shared on professional profiles like LinkedIn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CTA Section
+       ======================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2 class="cta-title">Ready to Upskill Your Team?</h2>
+        <p class="cta-desc">
+          Let's design an AI training program tailored to your organization's needs.
+          Get in touch to discuss your goals and schedule a session.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Book a Training Session</a>
+          <a href="services.html" class="btn btn-outline">Explore Consulting Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       Footer
+       ======================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo-text">Ai<span>Sensei</span>MY</div>
+          <p>
+            Your trusted AI partner for consulting, training, and creative solutions.
+            We make artificial intelligence accessible, practical, and impactful for
+            businesses of all sizes.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">AI Consulting</a></li>
+            <li><a href="training.html">AI Training</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="media.html">Creative Media</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <strong>Email</strong>
+              hello@aisenseimy.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text">
+              <strong>Phone</strong>
+              +60 12-345 6789
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="text">
+              <strong>Location</strong>
+              Kuala Lumpur, Malaysia
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AiSenseiMY. All rights reserved.</p>
+        <p>Built with <i class="fas fa-heart" style="color: var(--primary);"></i> and AI</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================
+       JavaScript
+       ======================================== -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('open');
+    }
+
+    // Close menu on link click (mobile)
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('open');
+      });
+    });
+
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // FAQ accordion
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // Close all FAQ items
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.classList.remove('active');
+      });
+
+      // Open clicked item if it wasn't already open
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
